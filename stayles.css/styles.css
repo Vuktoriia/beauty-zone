@@ -5,6 +5,7 @@
   font-style: normal;
   font-variation-settings: 'wdth' 100;
 }
+
 .play-bold {
   font-family: 'Play', sans-serif;
   font-weight: 700;
@@ -59,16 +60,19 @@ h4,
 p {
   margin-top: 0;
 }
+
 .logo {
   color: var(--beauty-landing-2-s2);
   display: block;
   text-decoration: none;
 }
+
 ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
+
 .section {
   padding: 48px 0;
 }
@@ -78,6 +82,7 @@ ul {
   max-width: 1440px;
   margin: 0% auto;
 }
+
 /* button */
 
 .button {
@@ -92,6 +97,7 @@ ul {
   cursor: pointer;
   font-family: var(--font-family);
 }
+
 .button:hover {
   background-color: transparent;
   color: #181817;
@@ -110,6 +116,11 @@ ul {
   color: var(--beauty-landing-2-s2);
   font-weight: 700;
 }
+
+.headr-icon {
+  fill: var(--beauty-landing-2-c1);
+}
+
 /* Header */
 .header-section {
   padding: 32px 0;
@@ -122,10 +133,12 @@ ul {
   backdrop-filter: blur(10px);
   background: rgba(255, 255, 255, 0.25);
 }
+
 .header-container {
   display: flex;
   align-items: center;
 }
+
 .hader-nav {
   display: flex;
   align-items: center;
@@ -145,7 +158,7 @@ ul {
   display: flex;
   gap: 32px;
   align-items: center;
- 
+
 }
 
 /* Hero section */
@@ -160,6 +173,8 @@ ul {
   margin: 0 auto;
   padding: 133px 0;
   margin-bottom: 40px;
+
+
 }
 
 .hero-text {
@@ -179,6 +194,7 @@ ul {
   margin-bottom: 40px;
   width: 529px;
 }
+
 .hero-content {
   margin-left: 106px;
 }
@@ -193,6 +209,10 @@ ul {
   color: #2b7fff;
 }
 
+.advantages-container {
+  margin-bottom: 96px;
+}
+
 .conversion-title {
   margin-bottom: 40px;
   font-family: var(--third-family);
@@ -204,21 +224,17 @@ ul {
 
 .conversion-text {
   margin-bottom: 40px;
-  width: 709px; /* как в макете */
+  width: 709px;
+  /* как в макете */
   font-size: 22px;
   line-height: 1.7;
   margin: 0 0 40px;
   letter-spacing: 0;
 }
+
 .images-face {
   flex-direction: column;
 }
-
-/* advantages-section */
-/* .advantages-section {
-  background-image: url(../images.jpg/background.svg);
-  background-repeat: no-repeat;
-} */
 
 .advantages-title {
   font-weight: 700;
@@ -241,18 +257,10 @@ ul {
   border: 1px solid lightsalmon;
   width: 316px;
   height: 181px;
-  /* padding-left: 32px;
-  padding-right: 32px;
-  padding-top: 85px;
-  padding-bottom: 24px; */
-}
-
-.why-content {
   margin: 0;
-  text-align: center;
   padding-left: 32px;
   padding-right: 32px;
-  padding-top: 85px;
+  padding-top: 25px;
   padding-bottom: 24px;
   font-family: var(--font-family);
   font-weight: 400;
@@ -260,14 +268,39 @@ ul {
   line-height: 1.3;
   text-align: center;
   color: #000;
+
+}
+
+.why-text {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.3;
+  text-align: center;
+
+}
+
+.vector-icon {
+  fill: var(--beauty-landing-2-s2);
+  padding-bottom: 12px;
+
 }
 
 
+
 /* Procedures section */
-.procedure-container {
+
+/* .procedure-container {
   gap: 16px;
   justify-content: center;
   margin-top: 40px;
+  
+} */
+.prosedure-container {
+  display: flex;
+  gap: 32px;
+  justify-content: center;
+  align-items: center;
 }
 
 .procedures-list {
@@ -275,6 +308,7 @@ ul {
   gap: 16px;
   justify-content: center;
 }
+
 .prosedure {
   border-radius: 120px 4px;
 }
@@ -290,45 +324,137 @@ ul {
   font-size: 64px;
   text-align: center;
 }
+
 .procedures-title span {
   color: #2b7fff;
 }
-/* 
-.procedures-text {
-  font-family: var(--font-family);
-  font-weight: 400;
-  font-size: 22px;
-  text-align: center;
 
-  text-align: justify;
-} */
+/* Carousel */
 
-/* Footer */
-
-.footer-container {
-  background: var(--beauty-landing-2-c1);
+.carousel-button {
+  display: flex;
+  align-items: center;
   justify-content: center;
-  max-width: 1440px;
-  height: 278px;
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  fill: var(--beauty-landing-2-c1);
+  border-radius: 50%;
+  background-color: transparent;
+  border: 1px solid var(--beauty-landing-2-c1);
+  cursor: pointer;
+
 }
 
-.navigation-text {
+.carousel-button:hover {
+  background-color: var(--beauty-landing-2-s2);
+  border-color: var(--beauty-landing-2-background);
+  fill: var(--beauty-landing-2-background);
 }
 
-/* .navigation-title {
-  font-weight: 700;
-  font-size: 64px;
-  text-align: center;
-  color: var(--beauty-landing-2-c1);
-} */
+/* Section */
+.contact-section {
+  padding-bottom: 0;
+}
+
+.contacts-container {
+  display: flex;
+  gap: 32px;
+  justify-content: center;
+  padding-bottom: 94px;
+}
+
 .navigation-title span {
   color: #2b7fff;
+
+}
+
+.privilege-title,
+.navigation-title {
+  justify-content: center;
+  text-align: center;
+  font-family: var(--third-family);
+  font-weight: 700;
+  font-size: 64px;
+}
+
+/* Footer */
+.footer {
+  position: relative;
+  background: var(--beauty-landing-2-c1);
+  display: flex;
+  padding: 56px 100px;
+  gap: 20px;
+
+}
+
+
+.footer::after {
+  position: absolute;
+  background-image: url("../images/bottel-footer.png");
+  width: 278px;
+  height: 213px;
+  content: " ";
+  bottom: 0;
+  background-repeat: no-repeat;
+  right: 0;
+
+}
+
+.footer-container {
+  display: flex;
+  padding: 56px 100px;
+  gap: 20px;
+}
+
+.footer-nav {
+  flex-basis: 50%;
+  display: flex;
+  flex-grow: 1;
+  gap: 20px;
+}
+
+.footer-addres {
+  flex-basis: 50%;
+  display: flex;
+  flex-grow: 1;
+  gap: 20px;
+}
+
+.address-link {
+
+  font-size: 16px;
+  text-decoration: none;
+  font-weight: 400;
+  color: var(--beauty-landing-2-background);
+}
+
+.logo-footer {
+  font-family: var(--third-family);
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 87%;
+  text-transform: capitalize;
+  color: var(--beauty-landing-2-s2);
+  flex-grow: 1;
+  margin-bottom: 0;
+}
+
+.footer-link,
+.adress-list {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--beauty-landing-2-background);
+  text-decoration: none;
+
 }
 
 .navigation-text {
   font-weight: 400;
   font-size: 16px;
   color: var(--beauty-landing-2-background);
+  flex-grow: 1;
 }
 
 .maps {
@@ -338,5 +464,58 @@ ul {
   border-radius: 32px;
   max-width: 605px;
   height: 481px;
+  margin: 0;
 }
-/* <p class="advantages-text"> */
+
+.adress-icon {
+  fill: #000;
+
+
+}
+
+.address-link {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--beauty-landing-2-background);
+  text-decoration: none;
+}
+
+.address-copyright {
+  font-size: 13px;
+  color: var(--beauty-landing-2-s5);
+}
+
+/* Modal */
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal {
+  position: relative;
+  width: 880px;
+  height: 880px;
+  background-color: var(--bakery-landing-1-background);
+  border-radius: 32px;
+}
+
+.backdrop.is-hidden {
+  /* display: none; */
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.modal-btn-close {
+  position: absolute;
+  top: 40px;
+  right: 40px;
+}
