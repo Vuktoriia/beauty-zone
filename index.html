@@ -20,16 +20,16 @@
             >Beauty <br />
             Zone</a
           >
-          <nav class="hader-nav">
+          <nav class="header-nav">
             <a href="index.html"></a>
             <ul class="header-menu">
               <li></li>
               <li>
-                <a class="link" href="#our-section">Про нас</a>
+                <a class="link" href="#hero-section">Про нас</a>
               </li>
-              <li><a class="link" href="#benefits-section">Чому ми</a></li>
+              <li><a class="link" href="#advantages-section">Чому ми</a></li>
               <li>
-                <a class="link" href="#procedures-section">Наші процедури</a>
+                <a class="link" href="#procedure-section">Наші процедури</a>
               </li>
               <li><a class="link" href="#contact-section">Контакти</a></li>
             </ul>
@@ -61,12 +61,16 @@
       </div>
     </header>
     <main>
-      <section class="hero-section">
+      <section class="hero-section" id="hero-section">
         <div class="container">
           <div class="hero-content">
             <p>Косметологічна клініка</p>
             <h1 class="hero-title" lang="en">Beauty zone</h1>
-            <button class="button modal-btn-open" type="button">
+            <button
+              class="button modal-btn-open"
+              type="button"
+              data-modal-open="звонок"
+            >
               Замовити дзвінок
             </button>
             <p class="hero-text">
@@ -79,27 +83,37 @@
       <section class="conversion-section">
         <div class="container">
           <div class="conversion-container">
-            <h2 class="conversion-title">
-              Перевтілюйтесь <br />в <span>Beauty Zone! </span>
-            </h2>
             <div class="conversion-text">
-              <p>Наша косметологія</p>
+              <h2 class="conversion-title">
+                Перетворіться в <span>Beauty Zone!</span>
+              </h2>
               <p>
-                B <span class="accent">Beauty Zone</span> ми гарантуємо найвищі
+                Наша косметологічна клініка пропонує вам професійні послуги з
+                догляду за шкірою обличчя та тіла.
+              </p>
+              <p>
+                В <span class="accent">Beauty Zone</span> ми гарантуємо найвищі
                 стандарти якості та приємний сервіс. Наші косметологічні
                 процедури та препарати допоможуть вам підтримувати свою красу та
                 молодість. З нами краса назавжди!
               </p>
             </div>
             <div class="images-face">
-              <img src="./images/Mask group.jpg" alt="before" />
-
-              <img src="./images/Mask group-2.jpg" alt="after" />
+              <img
+                class="photos-before"
+                src="./images/mask-before.jpg"
+                alt="before"
+              />
+              <img
+                class="photos-after"
+                src="./images/mask-after.jpg"
+                alt="after"
+              />
             </div>
           </div>
         </div>
       </section>
-      <section class="advantages-section">
+      <section class="advantages-section" id="advantages-section">
         <div class="container">
           <div class="advantages-container">
             <h2 class="advantages-title">
@@ -107,33 +121,27 @@
             </h2>
             <ul class="why-list">
               <li class="why-item">
-                <a href="#">
-                  <svg class="vector-icon" width="48" height="48">
-                    <use href="./images/icons.svg#icon-Vector-4"></use>
-                  </svg>
-                </a>
+                <svg class="vector-icon" width="48" height="48">
+                  <use href="./images/icons.svg#icon-Vector-4"></use>
+                </svg>
                 <p class="why-text">
                   Всі наші косметологи мають вищу медичну освіту та стаж роботи
                   від 5 років
                 </p>
               </li>
               <li class="why-item">
-                <a href="#">
-                  <svg class="vector-icon" width="48" height="48">
-                    <use href="./images/icons.svg#icon-Group-46194"></use>
-                  </svg>
-                </a>
+                <svg class="vector-icon" width="48" height="48">
+                  <use href="./images/icons.svg#icon-Group-46194"></use>
+                </svg>
                 <p>
                   Використовуємо тільки рофесійне обладнання та косметику,
                   перевірену часом
                 </p>
               </li>
               <li class="why-item">
-                <a href="#">
-                  <svg class="vector-icon" width="48" height="48">
-                    <use href="./images/icons.svg#icon-Vector-5"></use>
-                  </svg>
-                </a>
+                <svg class="vector-icon" width="48" height="48">
+                  <use href="./images/icons.svg#icon-Vector-5"></use>
+                </svg>
                 <p>
                   Наша мета - підкреслити переваги та приховати недоліки, а не
                   переробити
@@ -143,7 +151,7 @@
           </div>
         </div>
       </section>
-      <section class="procedure-section">
+      <section class="procedure-section" id="procedure-section">
         <div class="container">
           <h2 class="privilege-title procedures-title">
             Наші <span>процедури</span>
@@ -161,7 +169,10 @@
                   src="./images/card1.jpg"
                   alt="макси для лица"
                 />
-                <h3>Маски для обличчя</h3>
+                <h3 class="procedure-text">
+                  Маски <br />
+                  для обличчя
+                </h3>
               </li>
 
               <li class="procedure">
@@ -170,7 +181,7 @@
                   src="./images/card2.jpg"
                   alt="иньекции"
                 />
-                <h3>Ін'єкції для обличчя</h3>
+                <h3 class="procedure-text">Ін'єкції <br />для обличчя</h3>
               </li>
               <li class="procedure">
                 <img
@@ -178,10 +189,13 @@
                   src="./images/card3.jpg"
                   alt="очищення"
                 />
-                <h3>Очищення обличчя</h3>
+                <h3 class="procedure-text">
+                  Очищення <br />
+                  обличчя
+                </h3>
               </li>
             </ul>
-            <button class="carousel-button" type="button">
+            <button class="carousel-button next" type="button">
               <svg width="16" height="16">
                 <use href="./images/icons.svg#icon-Arrow"></use>
               </svg>
@@ -189,7 +203,7 @@
           </div>
         </div>
       </section>
-      <section class="contact-section">
+      <section class="contact-section" id="contact-section">
         <div class="container">
           <h2 class="privilege-title navigation-title">
             Як нас<span> знайти</span>
@@ -286,12 +300,12 @@
         </div>
       </div>
     </footer>
-    <div class="backdrop">
+    <div class="backdrop is-hidden" id="modal">
       <div class="modal">
         <button class="modal-btn-close" type="button">Close</button>
       </div>
     </div>
 
-    <script src="./js/model.js"></script>
+    <script src="./js/modal.js"></script>
   </body>
 </html>

@@ -39,6 +39,7 @@
 }
 
 /* Base */
+*,
 *::before,
 *::after {
   box-sizing: border-box;
@@ -110,6 +111,8 @@ ul {
   font-weight: 400;
   color: var(--dog-landing-3-c4);
   text-decoration: none;
+  display: inline-flex;
+  line-height: 1;
 }
 
 .link:hover {
@@ -139,12 +142,15 @@ ul {
   align-items: center;
 }
 
-.hader-nav {
+.header-nav {
   display: flex;
   align-items: center;
   flex-grow: 1;
   gap: 40px;
   margin-bottom: 16px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .header-menu {
@@ -168,14 +174,17 @@ ul {
   background-repeat: no-repeat;
   background-position: center top;
   background-size: cover;
-  position: relative;
-  max-width: 1440px;
-  margin: 0 auto;
+  height: 100dvh;
   padding: 133px 0;
   margin-bottom: 40px;
-
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
 
 }
+
+
 
 .hero-text {
   font-weight: 400;
@@ -205,12 +214,18 @@ ul {
   display: flex;
 } */
 
+
 .conversion-section span {
   color: #2b7fff;
 }
 
-.advantages-container {
+.conversion-container {
   margin-bottom: 96px;
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: center;
+  gap: 32px;
+
 }
 
 .conversion-title {
@@ -224,16 +239,53 @@ ul {
 
 .conversion-text {
   margin-bottom: 40px;
-  width: 709px;
+  width: 50%;
   /* как в макете */
   font-size: 22px;
   line-height: 1.7;
   margin: 0 0 40px;
   letter-spacing: 0;
+
 }
 
 .images-face {
+
   flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  width: 50%;
+  margin: 50px 0;
+
+  position: relative;
+  height: 700px;
+  margin: 0 auto;
+}
+
+
+.photos-before,
+.photos-after {
+  position: absolute;
+  border-radius: 50%;
+  width: 327px;
+  height: 327px;
+  object-fit: cover;
+}
+
+.photos-before {
+
+  margin-top: 30px;
+  left: -20px;
+  border-bottom-style: solid;
+  border-bottom-width: 0px;
+}
+
+
+.photos-after {
+  right: 80px;
+  top: 300px;
+  left: 172px;
+  padding-top: 0px;
+  margin-top: 40px;
 }
 
 .advantages-title {
@@ -250,6 +302,7 @@ ul {
   display: flex;
   gap: 56px;
   justify-content: center;
+  margin-bottom: 96px;
 }
 
 .why-item {
@@ -290,17 +343,12 @@ ul {
 
 /* Procedures section */
 
-/* .procedure-container {
-  gap: 16px;
-  justify-content: center;
-  margin-top: 40px;
-  
-} */
 .prosedure-container {
   display: flex;
   gap: 32px;
   justify-content: center;
   align-items: center;
+  margin-bottom: 96px;
 }
 
 .procedures-list {
@@ -309,25 +357,71 @@ ul {
   justify-content: center;
 }
 
-.prosedure {
+.procedure {
+  position: relative;
+  width: 344px;
+  height: 456px;
   border-radius: 120px 4px;
+  overflow: hidden;
+  transition: transform .3s, box-shadow .3s;
+  will-change: transform;
+}
+
+.procedure-text {
+  /* my h3 */
+  position: absolute;
+  left: 12px;
+  right: 12px;
+  bottom: 16px;
+  margin: 0;
+  padding: 8px 12px;
+  line-height: 1.2;
+  z-index: 2;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 22px;
+  text-align: center;
+  color: var(--beauty-landing-2-background);
+
+}
+
+.procedure:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, .15);
 }
 
 .procedure-card {
-  border-radius: 120px 4px;
-  width: 344px;
-  height: 456px;
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  transition: transform .3s;
 }
 
 .procedures-title {
   font-weight: 700;
   font-size: 64px;
   text-align: center;
+
 }
 
 .procedures-title span {
   color: #2b7fff;
 }
+
+.procedure::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 40%;
+  z-index: 1;
+  background: linear-gradient(180deg, rgba(1, 28, 68, 0) 4%, rgba(1, 28, 68, 0.73) 82.66%, #011c44 99.06%);
+
+}
+
+
 
 /* Carousel */
 
@@ -352,16 +446,30 @@ ul {
   fill: var(--beauty-landing-2-background);
 }
 
-/* Section */
-.contact-section {
-  padding-bottom: 0;
+.carousel-button.next {
+  transform: rotate(180deg);
 }
+
+/* contact-Section */
+.maps {
+  width: 100%;
+  max-width: 1240px;
+  margin: 0% auto;
+  border-radius: 32px;
+  max-width: 605px;
+  height: 481px;
+  margin: 0;
+}
+
+/* .contact-section {
+  padding-bottom: 0;
+} */
 
 .contacts-container {
   display: flex;
   gap: 32px;
   justify-content: center;
-  padding-bottom: 94px;
+  margin-bottom: 96px;
 }
 
 .navigation-title span {
@@ -383,8 +491,8 @@ ul {
   position: relative;
   background: var(--beauty-landing-2-c1);
   display: flex;
-  padding: 56px 100px;
-  gap: 20px;
+  padding: 56px 100px 0;
+
 
 }
 
@@ -395,7 +503,7 @@ ul {
   width: 278px;
   height: 213px;
   content: " ";
-  bottom: 0;
+  bottom: 0px;
   background-repeat: no-repeat;
   right: 0;
 
@@ -457,15 +565,6 @@ ul {
   flex-grow: 1;
 }
 
-.maps {
-  width: 100%;
-  max-width: 1240px;
-  margin: 0% auto;
-  border-radius: 32px;
-  max-width: 605px;
-  height: 481px;
-  margin: 0;
-}
 
 .adress-icon {
   fill: #000;
@@ -496,13 +595,17 @@ ul {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 20px 0;
   background-color: rgba(0, 0, 0, 0.5);
+  z-index: 99;
 }
 
 .modal {
   position: relative;
-  width: 880px;
-  height: 880px;
+  width: 100%;
+  max-width: 880px;
+  height: 100%;
+  max-height: 880px;
   background-color: var(--bakery-landing-1-background);
   border-radius: 32px;
 }
