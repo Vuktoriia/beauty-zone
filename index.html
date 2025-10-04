@@ -300,12 +300,68 @@
         </div>
       </div>
     </footer>
-    <div class="backdrop is-hidden" id="modal">
+    <div class="backdrop" id="modal">
       <div class="modal">
         <button class="modal-btn-close" type="button">Close</button>
+        <h2 class="modal-title">Замовити дзвінок</h2>
+        <p class="modal-text">
+          Запишіться <span>безкоштовно</span> та отримайте подарунок
+        </p>
+
+        <form name="modal-form" autocomplete="off">
+          <div class="form-fieled">
+            <label class="form-label visually-hidden" for="user-name"
+              >Ім‘я</label
+            >
+            <input
+              class="form-input"
+              type=" text"
+              name="user-name"
+              id="user-name"
+              placeholder="Ім‘я"
+              minlength="2"
+              maxlength="20"
+              required
+            />
+          </div>
+          <div class="form-fieled">
+            <label class="form-label visually-hidden" for="user-tel"
+              >Телефон</label
+            >
+            <input
+              class="form-input"
+              type=" tel"
+              name="user-tel"
+              id="user-tel"
+              placeholder="Ваш номер телефону"
+              required
+            />
+          </div>
+          <div class="form-fieled">
+            <label class="form-label visually-hidden" for="user-email"
+              >Електронна пошта</label
+            >
+            <input
+              class="form-input"
+              type=" email"
+              name="user-email"
+              id="user-email"
+              placeholder="Електронна пошта"
+              required
+            />
+          </div>
+
+          <button class="form-button button" type="submit">
+            Записатися безкоштовно
+          </button>
+        </form>
+        <p class="form-link">
+          Натискаючи на кнопку я погоджуюсь
+          <a class="form-terml-link" href="#">з політикою конфіденційності </a>
+        </p>
       </div>
     </div>
 
-    <script src="./js/modal.js"></script>
+    <script src="./js/model.js"></script>
   </body>
 </html>

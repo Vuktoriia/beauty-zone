@@ -73,6 +73,14 @@ ul {
   margin: 0;
   padding: 0;
 }
+.visually-hidden {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
 
 .section {
   padding: 48px 0;
@@ -599,18 +607,46 @@ ul {
   padding: 20px 0;
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 99;
+  overflow: auto;
 }
 
 .modal {
   position: relative;
+  padding: 144px;
   width: 100%;
   max-width: 880px;
   height: 100%;
   max-height: 880px;
-  background-color: var(--bakery-landing-1-background);
-  border-radius: 32px;
+  border-radius: 48px;
+  overflow: auto;
+  background: var(--beauty-landing-2-c1);
+}
+.modal-title {
+  font-weight: 700;
+  font-size: 64px;
+  width: 435px;
+  line-height: 1.2;
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 40px;
+  color: var(--beauty-landing-2-background);
+}
+.modal-text {
+font-weight: 600;
+font-size: 22px;
+width: 274px;
+height: 52px;
+display: block;
+text-align: center;
+margin: 0 auto;
+margin-bottom: 32px;
+color: var(--beauty-landing-2-background);
 }
 
+.modal-text span {
+  color: #2b7fff;
+}
 .backdrop.is-hidden {
   /* display: none; */
   opacity: 0;
@@ -618,8 +654,52 @@ ul {
   pointer-events: none;
 }
 
+.form-label {
+display: block;
+}
+
+
 .modal-btn-close {
   position: absolute;
   top: 40px;
   right: 40px;
+}
+
+.form-fieled {
+  margin-bottom: 24px;
+}
+
+.form-label {
+  display: block;
+ }
+
+ .form-input {
+padding: 16px 42px;
+width: 100%;
+font-size: 13px;
+line-height: 1.17;
+background-color: transparent; 
+border: 2px solid var(--beauty-landing-2-s5);
+border-radius: 32px;
+}
+
+.form-button {
+  display: block;
+  margin: 0 auto 8px;
+}
+.form-link {
+font-weight: 400;
+font-size: 12px;
+width: 213px;
+height: 36px;
+line-height: 1.15;
+margin: 0 auto;
+text-align: center;
+color: var(--beauty-landing-2-s5);
+text-decoration-skip-ink: none;
+}
+
+.form-terml-link {
+  color: var(--beauty-landing-2-s5);
+  text-decoration-skip-ink: none;
 }
