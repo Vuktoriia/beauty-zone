@@ -66,6 +66,8 @@ p {
   color: var(--beauty-landing-2-s2);
   display: block;
   text-decoration: none;
+  font-weight: 700;
+  line-height: 95%;
 }
 
 ul {
@@ -90,7 +92,7 @@ ul {
   width: 100%;
   max-width: 1272px;
   margin: 0% auto;
-  padding: 16;
+  padding:0 16px;
 }
 
 /* button */
@@ -100,7 +102,7 @@ ul {
   margin-bottom: 14px;
   border-radius: 32px;
   padding: 16px 32px;
-  border: none;
+  border: 2px solid transparent;
   font-size: 18px;
   font-weight: 600;
   color: var(--beauty-landing-2-background);
@@ -111,7 +113,7 @@ ul {
 .button:hover {
   background-color: transparent;
   color: #181817;
-  border: 2px solid #2b7fff;
+  border-color: #2b7fff;
 }
 
 /* link */
@@ -138,11 +140,9 @@ ul {
   padding: 32px 0;
   position: absolute;
   width: 100%;
-  margin-bottom: 108px;
   top: 0;
   left: 0;
-  z-index: 2;
-  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
   background: rgba(255, 255, 255, 0.25);
 }
 
@@ -189,7 +189,7 @@ ul {
   display: flex;
   align-items: center;
   justify-content: center;
-  position: relative;
+ 
 
 }
 
@@ -204,10 +204,9 @@ ul {
 .hero-title {
   color: var(--beauty-landing-2-s2);
   font-family: 'Play', sans-serif;
-  color: var(--beauty-landing-2-s2);
   font-weight: 700;
   font-size: 140px;
-  line-height: 148px;
+  line-height: 81%;
   text-transform: capitalize;
   margin-bottom: 40px;
   width: 529px;
@@ -217,11 +216,22 @@ ul {
   margin-left: 106px;
 }
 
-/* Conversion-section */
 
-/* .conversion-container {
-  display: flex;
-} */
+/* Background-wave */
+
+.background-wave {
+position: relative;
+background: url(../images/background-wave.png);
+background-repeat: no-repeat;
+background-position:  top center;
+z-index: 1;
+padding-top: 200px;
+
+}
+
+
+
+/* Conversion-section */
 
 
 .conversion-section span {
@@ -249,7 +259,6 @@ ul {
 .conversion-text {
   margin-bottom: 40px;
   width: 50%;
-  /* как в макете */
   font-size: 22px;
   line-height: 1.7;
   margin: 0 0 40px;
@@ -258,13 +267,11 @@ ul {
 }
 
 .images-face {
-
+  display: flex;
   flex-direction: column;
   align-items: center;
   gap: 40px;
   width: 50%;
-  margin: 50px 0;
-
   position: relative;
   height: 700px;
   margin: 0 auto;
@@ -301,6 +308,7 @@ ul {
   font-weight: 700;
   font-size: 64px;
   text-align: center;
+  line-height: 1.16;
 }
 
 .advantages-title span {
@@ -316,20 +324,17 @@ ul {
 
 .why-item {
   border-radius: 32px;
-  border: 1px solid lightsalmon;
   width: 316px;
   height: 181px;
   margin: 0;
-  padding-left: 32px;
-  padding-right: 32px;
-  padding-top: 25px;
-  padding-bottom: 24px;
+  padding: 25px 32px 24px 32px;
   font-family: var(--font-family);
   font-weight: 400;
   font-size: 18px;
   line-height: 1.3;
   text-align: center;
   color: #000;
+  background-color: #fff;
 
 }
 
@@ -495,32 +500,52 @@ ul {
   font-size: 64px;
 }
 
+.contact-form {
+  position: relative;
+  padding: 56px 32px 32px; 
+  background-color: var(--beauty-landing-2-c1);
+  border-radius: 32px;
+  width: 423px;
+  height: 481px;
+  overflow: visible;
+}
+
+.form-text {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 22px;
+  text-align: center;
+  color: var(--beauty-landing-2-background);
+}
+.form-text span {
+color: var(--beauty-landing-2-s2);
+}
 /* Footer */
 .footer {
   position: relative;
   background: var(--beauty-landing-2-c1);
   display: flex;
-  padding: 56px 100px 0;
-
-
+  padding: 56px 0;
 }
 
 
 .footer::after {
   position: absolute;
-  background-image: url("../images/bottel-footer.png");
+  background-image: url(../images/bottel-footer.png);
   width: 278px;
   height: 213px;
   content: " ";
   bottom: 0px;
   background-repeat: no-repeat;
   right: 0;
-
+  display: block;
+  background-position: right bottom;
+  
 }
 
 .footer-container {
   display: flex;
-  padding: 56px 100px;
+  padding: 56px 0;
   gap: 20px;
 }
 
@@ -681,12 +706,18 @@ line-height: 1.17;
 background-color: transparent; 
 border: 2px solid var(--beauty-landing-2-s5);
 border-radius: 32px;
+color: var(--beauty-landing-2-background);
 }
 
 .form-button {
   display: block;
   margin: 0 auto 8px;
 }
+
+.form-button:hover {
+color: var(--beauty-landing-2-background);
+}
+
 .form-link {
 font-weight: 400;
 font-size: 12px;
