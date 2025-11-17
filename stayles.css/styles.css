@@ -524,10 +524,8 @@ color: var(--beauty-landing-2-s2);
 .footer {
   position: relative;
   background: var(--beauty-landing-2-c1);
-  display: flex;
   padding: 56px 0;
 }
-
 
 .footer::after {
   position: absolute;
@@ -545,79 +543,91 @@ color: var(--beauty-landing-2-s2);
 
 .footer-container {
   display: flex;
-  padding: 56px 0;
-  gap: 20px;
+  align-items: flex-start;
+  gap: 186px;
 }
+
+.footer-col {
+font-weight: 700;
+font-size: 24px;
+color: var(--beauty-landing-2-s2);
+line-height:87%;
+text-transform: capitalize;
+
+}
+
 
 .footer-nav {
   flex-basis: 50%;
   display: flex;
   flex-grow: 1;
-  gap: 20px;
+  gap: 186px;
+  flex-direction: column;
+
 }
 
-.footer-addres {
+.footer-contacts-icons {
   flex-basis: 50%;
-  display: flex;
   flex-grow: 1;
-  gap: 20px;
+  gap: 186px;
+  flex-direction: column;
+}
+.footer-addres {
+  font-style: normal;
 }
 
-.address-link {
 
-  font-size: 16px;
-  text-decoration: none;
-  font-weight: 400;
-  color: var(--beauty-landing-2-background);
-}
 
-.logo-footer {
-  font-family: var(--third-family);
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 87%;
-  text-transform: capitalize;
-  color: var(--beauty-landing-2-s2);
-  flex-grow: 1;
-  margin-bottom: 0;
-}
-
-.footer-link,
 .adress-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+ 
+}
+.address-link {
   font-family: var(--font-family);
   font-weight: 400;
   font-size: 16px;
   color: var(--beauty-landing-2-background);
   text-decoration: none;
-
+}
+.footer-link,
+.adress-list {
+  color: var(--beauty-landing-2-background);
+  text-decoration: none;
 }
 
 .navigation-text {
-  font-weight: 400;
-  font-size: 16px;
-  color: var(--beauty-landing-2-background);
-  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 }
 
+.icon-footer {
+  display: flex;
+  gap: 24px;
+  margin-top: 16px;
+align-items: center;
+}
 
 .adress-icon {
-  fill: #000;
-
-
+  fill: var(--bakery-landing-1-c5);
 }
 
-.address-link {
-  font-family: var(--font-family);
-  font-weight: 400;
-  font-size: 16px;
-  color: var(--beauty-landing-2-background);
-  text-decoration: none;
+.address-info {
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+gap: 16px;
+width: 100%;
 }
 
 .address-copyright {
   font-size: 13px;
   color: var(--beauty-landing-2-s5);
 }
+
+
 
 /* Modal */
 .backdrop {
