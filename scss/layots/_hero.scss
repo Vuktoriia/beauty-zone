@@ -1,0 +1,37 @@
+/* Hero section */
+
+.hero-section {
+    background-image: url(../images/bcgfon.png);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+    height: 100dvh;
+    padding: 133px 0;
+    margin-bottom: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+&__title {
+        color: var(--beauty-landing-2-s2);
+        font-family: 'Play', sans-serif;
+        font-weight: 700;
+        font-size: 140px;
+        line-height: 81%;
+        text-transform: capitalize;
+        margin-bottom: 40px;
+        width: 529px;
+    }
+
+ &__text {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 150%;
+        }
+
+&__content {
+    margin-left: 106px;
+}
+}
+
+
+

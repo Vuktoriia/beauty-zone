@@ -1,0 +1,101 @@
+.procedures {
+    &__title {
+        font-weight: 700;
+        font-size: 64px;
+        text-align: center;
+        margin-bottom: 48px;
+    }
+
+    &__title-accent {
+        color: #2b7fff;
+    }
+
+    &__carousel {
+        display: flex;
+        gap: 32px;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 96px;
+    }
+
+    &__list {
+        display: flex;
+        gap: 16px;
+        justify-content: center;
+        padding: 0;
+        margin: 0;
+        list-style: none;
+    }
+
+    &__item {
+        position: relative;
+        width: 344px;
+        height: 456px;
+        border-radius: 120px 4px;
+        overflow: hidden;
+        transition: transform 0.3s, box-shadow 0.3s;
+        will-change: transform;
+
+       
+    }
+
+    &__image {
+        width: 100%;
+        height: 100%;
+        display: block;
+        object-fit: cover;
+&:hover {
+     transform: scale(1.05);
+     box-shadow: 0 12px 32px rgba(0, 0, 0, 0.15);
+            }
+        
+ &::after {
+    content: "";
+     position: absolute;
+     inset: auto 0 0 0;
+    height: 40%;
+    z-index: 1;
+    background: linear-gradient(180deg,
+     rgba(1, 28, 68, 0) 4%,
+     rgba(1, 28, 68, 0.73) 82.66%,
+    #011c44 99.06%);
+            }
+    }
+
+    &__text {
+        position: absolute;
+        left: 12px;
+        right: 12px;
+        bottom: 16px;
+        z-index: 2;
+        margin: 0;
+        padding: 8px 12px;
+        font-family: var(--font-family);
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 1.2;
+        text-align: center;
+        color: var(--beauty-landing-2-background);
+    }
+
+    &__btn {
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+        border: 1px solid #011c44;
+        background: transparent;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+
+        &--next {
+            transform: rotate(180deg);
+        }
+        &:hover {
+         background-color: var(--beauty-landing-2-s2);
+        border: 1px solid #ffffff;
+        fill: #ffffff;
+        }
+    }
+}

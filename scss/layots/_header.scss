@@ -1,0 +1,43 @@
+/* Header */
+.header {
+    padding: 32px 0;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.25);
+
+ &__container {
+    display: flex;
+    align-items: center;
+}
+&__nav {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    gap: 40px;
+    margin-bottom: 16px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+&__menu {
+    display: flex;
+    gap: 56px;
+    flex-grow: 1;
+    justify-content: center;
+}
+&__icon {
+    fill: var(--beauty-landing-2-c1);
+}
+&__icons-list {
+    display: flex;
+    gap: 32px;
+    align-items: center;
+
+}
+}
+
+

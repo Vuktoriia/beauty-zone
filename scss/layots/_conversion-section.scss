@@ -1,0 +1,66 @@
+/* Conversion-section */
+
+.conversion-section {
+ &__container {
+        margin-bottom: 96px;
+        display: flex;
+        /* justify-content: space-between; */
+        align-items: center;
+        gap: 32px;
+
+    }
+&__text {
+    margin-bottom: 40px;
+    width: 50%;
+    font-size: 22px;
+    line-height: 1.7;
+    margin: 0 0 40px;
+    letter-spacing: 0;
+
+}
+&__title {
+    margin-bottom: 40px;
+    font-family: var(--third-family);
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 1.16;
+    color: var(--beauty-landing-2-c1);
+}
+    &__images-face {
+        width: 50%;
+        position: relative;
+        height: 700px;
+        margin: 0 auto;
+    }
+
+    &__images-face__photos-before,
+    &__images-face__photos-after {
+        position: absolute;
+        border-radius: 50%;
+        width: 327px;
+        height: 327px;
+        object-fit: cover;
+    }
+
+    &__images-face__photos-before {
+        margin-top: 30px;
+        left: -20px;
+        top: 0;
+    }
+
+    &__images-face__photos-after {
+        top: 300px;
+        left: 172px;
+        margin-top: 40px;
+    }
+    
+ &__span {
+       color: #2b7fff;
+            }
+&__accent {
+    font-weight: 600;
+    text-transform: capitalize;
+}
+        }
+
+

@@ -1,0 +1,81 @@
+.contact {
+    &__title {
+        text-align: center;
+        font-family: var(--third-family);
+        font-weight: 700;
+        font-size: 64px;
+        margin-bottom: 48px;
+    }
+
+    &__title-accent {
+        color: #2b7fff;
+    }
+
+    &__content {
+        display: flex;
+        gap: 32px;
+        justify-content: center;
+        margin-bottom: 96px;
+        align-items: stretch;
+    }
+
+    &__map {
+        width: 605px;
+        height: 481px;
+        border-radius: 32px;
+        border: 0;
+    }
+
+    &__form-card {
+        position: relative;
+        padding: 56px 32px 32px;
+        background-color: var(--beauty-landing-2-c1);
+        border-radius: 32px;
+        width: 423px;
+        height: 481px;
+    }
+
+    &__lead {
+        font-family: var(--font-family);
+        font-weight: 600;
+        font-size: 22px;
+        text-align: center;
+        color: var(--beauty-landing-2-background);
+        margin: 0 0 32px;
+    }
+
+    &__lead-accent {
+        color: var(--beauty-landing-2-s2);
+    }
+
+    &__field {
+        margin-bottom: 16px;
+    }
+
+    &__input {
+        width: 100%;
+        padding: 16px;
+        border-radius: 32px;
+        border: 1px solid rgba(255, 255, 255, 0.4);
+        background: transparent;
+        color: var(--beauty-landing-2-background);
+        outline: none;
+    }
+
+    &__btn {
+        display: block;
+        margin: 24px auto 16px;
+    }
+
+    &__terms {
+        margin: 0;
+        font-size: 12px;
+        text-align: center;
+        color: rgba(255, 255, 255, 0.7);
+    }
+
+    &__terms-link {
+        color: rgba(255, 255, 255, 0.9);
+        text-decoration: underline;
+    }
+}
