@@ -61,6 +61,40 @@
     font-weight: 600;
     text-transform: capitalize;
 }
-        }
+
+    &__decor {
+        position: relative;
+        width: 100%;
+        
+    }
+
+    &__star {
+        position: absolute;
+        display: block;
+    }
+
+    &__star--l {
+        top: 392px;
+        left: 770px;
+        transform: rotate(12deg);
+        fill: var(--beauty-landing-2-c6);
+    }
+
+    &__star--m {
+        top: 33px;
+        right: 216px;
+        transform: rotate(-8deg);
+        fill: var(--beauty-landing-2-s2);
+    }
+
+    &__star--s {
+        bottom: -300px;
+        left: 85%;
+        transform: translateX(-50%) rotate(20deg);
+        fill: var(--beauty-landing-2-s5);
+    }
+}
+
+ 
 
 
