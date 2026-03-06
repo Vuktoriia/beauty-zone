@@ -1,35 +1,109 @@
 /* Hero section */
 
 .hero-section {
-    background-image: url(../images/bcgfon.png);
+    background-image:  linear-gradient(38deg, #fff 0%, rgba(255, 255, 255, 0.78) 31.23%, rgba(255, 255, 255, 0.2) 50.39%, rgba(255, 255, 255, 0) 68.37%), url(../images/bcgfon.png);
     background-repeat: no-repeat;
-    background-position: center top;
+    background-position: right top;
     background-size: cover;
-    padding: 133px 0;
-    padding-bottom: 55px;
+    padding-top: 81px;
+    padding-bottom: 60px;
+    min-height: 520px;
     display: flex;
     align-items: center;
     justify-content: center;
-&__title {
-        color: var(--beauty-landing-2-s2);
-        font-family: 'Play', sans-serif;
-        font-weight: 700;
-        font-size: 140px;
-        line-height: 81%;
-        text-transform: capitalize;
-        margin-bottom: 40px;
-        width: 529px;
+ 
+    @media screen and (min-width: $bp-tablet) {
+        background-image: linear-gradient(38deg, #fff 0%, rgba(255, 255, 255, 0.78) 31.23%, rgba(255, 255, 255, 0.2) 50.39%, rgba(255, 255, 255, 0) 68.37%), url(../images/bcgfon.png);
+    }
+    @media screen and (min-width: $bp-desktop) {
+    padding: 133px 0;
+    // padding-bottom: 55px;
+    min-height: 720px;
+    background-image: linear-gradient(94deg, #fff 9.65%, rgba(255, 255, 255, 0.85) 26.08%, rgba(255, 255, 255, 0.19) 52.74%, rgba(255, 255, 255, 0) 74.46%),
+        url(../images/bcgfon.png);
     }
 
- &__text {
-        font-weight: 400;
-        font-size: 12px;
-        line-height: 150%;
+
+ &__title {
+
+    font-size: 54px;
+    line-height: 0.85;
+    color: var(--beauty-landing-2-s2);
+    margin-bottom: 32px;
+    
+ @media screen and (min-width: $bp-desktop) {
+    font-family: 'Play', sans-serif;
+    font-weight: 700;
+    font-size: 140px;
+    line-height: 0.81;
+    text-transform: capitalize;
+    width: 529px;
+    margin-bottom: 40px;
+    text-align: left;
+}
         }
 
-&__content {
-    margin-left: 106px;
+ &__text {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 164%;
+    text-align: center;
+    color: var(--beauty-landing-2-c3);
+    margin-top: 8px;
+        
+@media screen and (min-width: $bp-desktop) {
+    padding-top: 14px;
+    font-size: 12px;
+    line-height: 150%;
+    text-align: center;
+    margin: 0 0;
+    padding-top: 0;
+    padding-left: 10px;
+
+    
+ }
+     }       
+        
+
+ &__content {
+    text-align: center;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;       
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+        
+@media screen and (min-width: $bp-desktop) {
+    text-align: left;
+    align-items: flex-start;
+     margin-left: 20px;
+     }      
+     }
+&__subtitle {
+    font-size: 12px;
+    color: var(--beauty-landing-2-c1);
+    line-height: 150%;
+    margin-bottom: 8px;
+    
+
+@media screen and (min-width: $bp-desktop){
+ 
+    font-size: 18px;
+    line-height: 150%;
+    color: var(--beauty-landing-2-c1);
+    font-family: var(--font-family);
+    margin-left: 38px;
+    text-align: left;
+
 }
+}
+&__button {
+
+    
+}
+
 }
 
 

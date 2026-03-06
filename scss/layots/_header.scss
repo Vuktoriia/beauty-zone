@@ -5,13 +5,37 @@
     width: 100%;
     top: 0;
     left: 0;
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    background: rgba(255, 255, 255, 0.25);
+  
+
+    @media screen and (min-width: $bp-desktop) {
+        backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            background: rgba(255, 255, 255, 0.25);
+
+    }
+
+    &__logo {
+        color: var(--beauty-landing-2-s2);
+        display: block;
+        text-decoration: none;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 95%;  
+
+    @media screen and (min-width: $bp-desktop) {
+            font-weight: 700;
+            font-size: 22px;
+            line-height: 95%;
+            text-transform: capitalize;
+            color: var(--beauty-landing-2-s2);
+    }
+    }
 
  &__container {
     display: flex;
     align-items: center;
+
+   
 }
 &__nav {
     display: flex;
@@ -22,22 +46,50 @@
     list-style: none;
     margin: 0;
     padding: 0;
+
+    
 }
 &__menu {
-    display: flex;
-    gap: 56px;
-    flex-grow: 1;
-    justify-content: center;
+   display: none;
+
+    @media screen and (min-width: $bp-desktop) {
+        display: flex;
+        flex-grow: 1;
+        justify-content: center;
+        gap: 56px;
+    }
 }
 &__icon {
     fill: var(--beauty-landing-2-c1);
 }
-&__icons-list {
-    display: flex;
-    gap: 32px;
-    align-items: center;
 
+ &__icons-list {
+    display: none;
+
+    @media screen and (min-width: $bp-desktop) {
+        display: flex;
+            gap: 32px;
+            align-items: center;
+    }
+
+ 
+}
+&__burger {
+    background-color: transparent;
+    border: none;
+    width: 24px;
+    height: 24px;
+    margin-right: 0px;
+    padding-right: 50px;
+    fill: var(--bakery-landing-1-background);
+
+    @media screen and (min-width: $bp-desktop) {
+        display: none;
+    }
 }
 }
+
+
+
 
 
