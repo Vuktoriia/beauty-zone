@@ -1,5 +1,8 @@
 .procedures-cards {
     position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
     width: 100%;
     max-width: 344px;
     height: 456px;

@@ -11,10 +11,6 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/main.min.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
-    />
   </head>
   <body>
     <header class="header">
@@ -193,59 +189,50 @@
               Наші <span class="procedures__title-accent">процедури</span>
             </h2>
 
-            <div class="procedures__slider">
-              <button class="procedures__btn carusel-button prev" type="button">
+            <div class="procedures__carousel">
+              <button class="procedures__btn" type="button">
                 <svg width="16" height="16">
                   <use href="./images/icons.svg#icon-Arrow"></use>
                 </svg>
               </button>
 
-              <div class="procedures__container swiper">
-                <ul class="procedures__list swiper-wrapper">
-                  <li class="procedures__slide swiper-slide">
-                    <article class="procedures-cards">
-                      <img
-                        class="procedures-cards__image"
-                        src="./images/card1.jpg"
-                        alt="Маски для обличчя"
-                      />
-                      <h3 class="procedures-cards__text">
-                        Маски<br />для обличчя
-                      </h3>
-                    </article>
-                  </li>
+              <ul class="procedures__list">
+                <li class="procedures-cards__item">
+                  <article class="procedures-cards">
+                    <img
+                      class="procedures-cards__image"
+                      src="./images/card1.jpg"
+                      alt="Маски для обличчя"
+                    />
+                    <h3 class="procedures__text">Маски<br />для обличчя</h3>
+                  </article>
+                </li>
+                <li class="procedures__item">
+                  <article class="procedures-cards">
+                    <img
+                      class="procedures__image"
+                      src="./images/card2.jpg"
+                      alt="Ін'єкції для обличчя"
+                    />
+                    <h3 class="procedures__text">Ін'єкції<br />для обличчя</h3>
+                  </article>
+                </li>
+                <li class="procedures__item">
+                  <article class="procedures-cards">
+                    <img
+                      class="procedures-cards__image"
+                      src="./images/card3.jpg"
+                      alt="Очищення обличчя"
+                    />
+                    <h3 class="procedures__text">Очищення<br />обличчя</h3>
+                  </article>
+                </li>
+              </ul>
 
-                  <li class="procedures__slide swiper-slide">
-                    <article class="procedures-cards">
-                      <img
-                        class="procedures-cards__image"
-                        src="./images/card2.jpg"
-                        alt="Ін'єкції для обличчя"
-                      />
-                      <h3 class="procedures-cards__text">
-                        Ін'єкції<br />для обличчя
-                      </h3>
-                    </article>
-                  </li>
-
-                  <li class="procedures__slide swiper-slide">
-                    <article class="procedures-cards">
-                      <img
-                        class="procedures-cards__image"
-                        src="./images/card3.jpg"
-                        alt="Очищення обличчя"
-                      />
-                      <h3 class="procedures-cards__text">
-                        Очищення<br />обличчя
-                      </h3>
-                    </article>
-                  </li>
-                </ul>
-
-                <div class="pagination"></div>
-              </div>
-
-              <button class="procedures__btn carusel-button next" type="button">
+              <button
+                class="procedures__btn procedures__btn--next"
+                type="button"
+              >
                 <svg width="16" height="16">
                   <use href="./images/icons.svg#icon-Arrow"></use>
                 </svg>
@@ -506,6 +493,5 @@
 
     <script src="./js/model.js"></script>
     <script src="./js/mobile-menu.js"></script>
-    <script src="./js/procedures-slider.js"></script>
   </body>
 </html>
