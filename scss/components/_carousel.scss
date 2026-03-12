@@ -12,6 +12,7 @@
     background-color: transparent;
     border: 1px solid var(--beauty-landing-2-c1);
     cursor: pointer;
+    flex-shrink: 0;
 
 }
 
@@ -20,7 +21,8 @@
     border-color: var(--beauty-landing-2-background);
     fill: var(--beauty-landing-2-background);
 }
-
-.carousel-button.next {
+.carusel-button--next {
     transform: rotate(180deg);
+
+    
 }

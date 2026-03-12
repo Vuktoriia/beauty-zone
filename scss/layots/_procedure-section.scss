@@ -1,71 +1,75 @@
 .procedures {
-    &__container {
+    &__slider {
+        display: flex;
+        align-items: center;
+        gap: 73px;
         overflow: hidden;
     }
-    &__title {
+
+&__title {
+    text-align: center;
     font-weight: 500;
     font-size: 32px;
     text-align: center;
-    line-height: 1.16;
-       
-@media screen and (min-width: $bp-desktop) {
-        font-weight: 700;
-        font-size: 64px;
-         
+    margin-bottom: 48px;
+    line-height: 1.3;
+    @media screen and (min-width: $bp-desktop) {
+            font-weight: 700;
+            font-size: 64px;
+            line-height: 1.5;
+        }
+
+}
+&__title-accent {
+    color: #2b7fff;
+}
+&--centered {
+    text-align: center;
+}
+&__container {
+    overflow: hidden;
+}
+&__list {
+    margin-bottom: 32px;
+}
+
+&__button {
+    display: none;
+
+    @media screen and (min-width: $bp-tablet) {
+       display: flex;
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+        border: 1px solid #011c44;
+        background: transparent;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        flex-shrink: 0;
+    
+      
+        &:hover {
+            background-color: var(--beauty-landing-2-s2);
+            border: 1px solid #ffffff;
+            fill: #ffffff;
+
         }
     }
-        &__title-accent {
-            color: #2b7fff;   }
-    
-    &__list {
-        display: flex;
-        gap: 16px;
-        flex-wrap: wrap;
-    }
 
-          // контейнер (лист)и айтем
-    
-          // &__carousel {
-          //     display: flex;
-          //     gap: 32px;
-          //     justify-content: center;
-          //     align-items: center;
-          //     margin-bottom: 96px;
-          // }
-    // &__item {
+   
+ 
 
-    //     position: relative;
-    //     width: 344px;
-    //     height: 456px;
-    //     border-radius: 120px 4px;
-    //     overflow: hidden;
-    //     transition: transform 0.3s, box-shadow 0.3s;
-    //     will-change: transform;
-
-       
-    // }
-
-
-  
-
-    // &__btn {
-    //     width: 44px;
-    //     height: 44px;
-    //     border-radius: 50%;
-    //     border: 1px solid #011c44;
-    //     background: transparent;
-    //     display: flex;
-    //     align-items: center;
-    //     justify-content: center;
-    //     cursor: pointer;
-
-    //     &--next {
-    //         transform: rotate(180deg);
-    //     }
-    //     &:hover {
-    //      background-color: var(--beauty-landing-2-s2);
-    //     border: 1px solid #ffffff;
-    //     fill: #ffffff;
-    //     }
-    // }
 }
+}
+
+
+
+
+
+
+
+
+
+

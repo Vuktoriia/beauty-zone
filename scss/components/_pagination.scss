@@ -9,11 +9,11 @@
         width: 12px;
         height: 12px;
         border-radius: 100%;
-        fill: var(--beauty-landing-2-s5);
+        background-color: var(--beauty-landing-2-s5);
         padding: 0;
 
         &--active {
-           fill: var(--beauty-landing-2-s2);;
+           background-color: var(--beauty-landing-2-s2);;
         }
 
 

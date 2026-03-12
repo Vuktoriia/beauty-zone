@@ -2,9 +2,15 @@
     &__title {
         text-align: center;
         font-family: var(--third-family);
-        font-weight: 700;
-        font-size: 64px;
-        margin-bottom: 48px;
+        font-weight: 500;
+        font-size: 32px;
+        margin: 24px 0;
+
+        @media screen and (min-width: $bp-desktop) {
+            font-weight: 700;
+            font-size: 64px;
+            margin-bottom: 48px;
+        }
     }
 
     &__title-accent {
@@ -15,24 +21,54 @@
         display: flex;
         gap: 32px;
         justify-content: center;
-        margin-bottom: 96px;
+        margin-bottom: 0px;
         align-items: stretch;
+        flex-direction: column-reverse;
+        align-items: center;
+
+        @media screen and (min-width: $bp-desktop) {
+            display: flex;
+            flex-direction: row;
+             gap: 32px;
+             justify-content: center;
+             margin-bottom: 96px;
+             align-items: stretch;
+        }
     }
 
     &__map {
-        width: 605px;
-        height: 481px;
-        border-radius: 32px;
-        border: 0;
+        flex-shrink: 0;
+        border: none;
+        border-radius: 16px;
+        width: 100%;
+        height: 100%;
+
+        @media screen and (min-width: $bp-desktop) {
+         width: 605px;
+         height: 481px;
+         border-radius: 32px;
+         border: 0;
+        }
     }
 
     &__form-card {
         position: relative;
-        padding: 56px 32px 32px;
+        padding: 42px 24px;
         background-color: var(--beauty-landing-2-c1);
         border-radius: 32px;
+        max-width: 100%;
         width: 423px;
         height: 481px;
+
+
+        @media screen and (min-width: $bp-desktop) {
+            position: relative;
+            padding: 48px 56px;
+            border-radius: 32px;
+            max-width: 100%;
+            width: 423px;
+            height: 481px;
+        }
     }
 
     &__lead {
@@ -41,7 +77,11 @@
         font-size: 22px;
         text-align: center;
         color: var(--beauty-landing-2-background);
-        margin: 0 0 32px;
+        margin: 0 0 24px;
+
+        @media screen and (min-width: $bp-desktop) {
+            margin: 0 0 32px;
+        }
     }
 
     &__lead-accent {
@@ -53,13 +93,24 @@
     }
 
     &__input {
-        width: 100%;
-        padding: 16px;
         border-radius: 32px;
+        width: 241px;
+            height: 46px;
+        // width: 100%;
+        padding: 16px;
         border: 1px solid rgba(255, 255, 255, 0.4);
         background: transparent;
         color: var(--beauty-landing-2-background);
         outline: none;
+
+        @media screen and (min-width: $bp-desktop) {
+            width: 100%;
+            border-radius: 32px;
+            border: 1px solid rgba(255, 255, 255, 0.4);
+            background: transparent;
+            color: var(--beauty-landing-2-background);
+            outline: none;
+        }
     }
 
     &__btn {

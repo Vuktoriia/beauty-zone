@@ -11,6 +11,10 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/main.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+    />
   </head>
   <body>
     <header class="header">
@@ -188,49 +192,115 @@
             <h2 class="procedures__title">
               Наші <span class="procedures__title-accent">процедури</span>
             </h2>
-
-            <div class="procedures__carousel">
-              <button class="procedures__btn" type="button">
+            <div class="procedures__slider">
+              <button
+                class="procedures__button carusel-button prev"
+                type="button"
+              >
                 <svg width="16" height="16">
                   <use href="./images/icons.svg#icon-Arrow"></use>
                 </svg>
               </button>
-
-              <ul class="procedures__list">
-                <li class="procedures-cards__item">
-                  <article class="procedures-cards">
-                    <img
-                      class="procedures-cards__image"
-                      src="./images/card1.jpg"
-                      alt="Маски для обличчя"
-                    />
-                    <h3 class="procedures__text">Маски<br />для обличчя</h3>
-                  </article>
-                </li>
-                <li class="procedures__item">
-                  <article class="procedures-cards">
-                    <img
-                      class="procedures__image"
-                      src="./images/card2.jpg"
-                      alt="Ін'єкції для обличчя"
-                    />
-                    <h3 class="procedures__text">Ін'єкції<br />для обличчя</h3>
-                  </article>
-                </li>
-                <li class="procedures__item">
-                  <article class="procedures-cards">
-                    <img
-                      class="procedures-cards__image"
-                      src="./images/card3.jpg"
-                      alt="Очищення обличчя"
-                    />
-                    <h3 class="procedures__text">Очищення<br />обличчя</h3>
-                  </article>
-                </li>
-              </ul>
-
+              <div class="procedures__container swiper-container">
+                <ul class="procedures__list swiper-wrapper">
+                  <li class="swiper-slide">
+                    <article class="procedures-cards">
+                      <img
+                        class="procedures-cards__image"
+                        src="./images/card1.jpg"
+                        alt="Маски для обличчя"
+                      />
+                      <h3 class="procedures-cards__text">
+                        Маски<br />для обличчя
+                      </h3>
+                    </article>
+                  </li>
+                  <li class="swiper-slide">
+                    <article class="procedures-cards">
+                      <img
+                        class="procedures-cards__image"
+                        src="./images/card2.jpg"
+                        alt="Ін'єкції для обличчя"
+                      />
+                      <h3 class="procedures-cards__text">
+                        Ін'єкції<br />для обличчя
+                      </h3>
+                    </article>
+                  </li>
+                  <li class="swiper-slide">
+                    <article class="procedures-cards">
+                      <img
+                        class="procedures-cards__image"
+                        src="./images/card3.jpg"
+                        alt="Очищення обличчя"
+                      />
+                      <h3 class="procedures-cards__text">
+                        Очищення<br />обличчя
+                      </h3>
+                    </article>
+                  </li>
+                  <li class="swiper-slide">
+                    <article class="procedures-cards">
+                      <img
+                        class="procedures-cards__image"
+                        src="./images/card1.jpg"
+                        alt="Маски для обличчя"
+                      />
+                      <h3 class="procedures-cards__text">
+                        Маски<br />для обличчя
+                      </h3>
+                    </article>
+                  </li>
+                  <li class="swiper-slide">
+                    <article class="procedures-cards">
+                      <img
+                        class="procedures-cards__image"
+                        src="./images/card2.jpg"
+                        alt="Ін'єкції для обличчя"
+                      />
+                      <h3 class="procedures-cards__text">
+                        Ін'єкції<br />для обличчя
+                      </h3>
+                    </article>
+                  </li>
+                  <li class="swiper-slide">
+                    <article class="procedures-cards">
+                      <img
+                        class="procedures-cards__image"
+                        src="./images/card3.jpg"
+                        alt="Очищення обличчя"
+                      />
+                      <h3 class="procedures-cards__text">
+                        Очищення<br />обличчя
+                      </h3>
+                    </article>
+                  </li>
+                </ul>
+                <div class="pagination">
+                  <button
+                    class="pagination__button"
+                    type="button"
+                    aria-lable="Go to slide 1"
+                  ></button>
+                  <button
+                    class="pagination__button"
+                    type="button"
+                    aria-lable="Go to slide 2"
+                  ></button>
+                  <button
+                    class="pagination__button"
+                    type="button"
+                    aria-lable="Go to slide 3"
+                  ></button>
+                  <button
+                    class="pagination__button"
+                    type="button"
+                    aria-lable="Go to slide 4"
+                  ></button>
+                </div>
+              </div>
               <button
-                class="procedures__btn procedures__btn--next"
+                class="procedures__button carusel-button--next"
                 type="button"
               >
                 <svg width="16" height="16">
@@ -241,7 +311,7 @@
           </div>
         </section>
       </div>
-      <!-- <section class="contact" id="contact-section">
+      <section class="contact" id="contact-section">
         <div class="container">
           <h2 class="contact__title">
             Як нас <span class="contact__title-accent">знайти</span>
@@ -327,7 +397,7 @@
             </div>
           </div>
         </div>
-      </section> -->
+      </section>
     </main>
     <!-- <footer class="footer">
       <div class="container">
@@ -490,8 +560,9 @@
         </p>
       </div>
     </div> -->
-
-    <script src="./js/model.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script src="./js/procedures-slider.js"></script>
+    <script src="./js/modal.js"></script>
     <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
