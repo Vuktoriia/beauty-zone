@@ -89,59 +89,79 @@
     text-transform: capitalize;
 }
 
+
+
     &__decor {
         position: relative;
         width: 100%;
-        
+       
     }
 
-    &__star {
-        position: absolute;
-        display: block;
-    }
-
-    &__star--l {
-        width: 40px;
-        height: 40px;
-        fill: var(--beauty-landing-2-c6);
-        transform: rotate(12deg);
-        top: 376px;
-        left: 295px;
+        &__star {
             position: absolute;
-
-        @media screen and (min-width: $bp-desktop){
-           width: 64px;
-           height: 64px;
-            top: 392px;
-            left: 770px;
-            transform: rotate(12deg);
+            display: block;
+            animation: starsBlink 2.5s infinite ease-in-out;
+            transform-origin: center;
+        }
     
+        &__star--l {
+            width: 40px;
+            height: 40px;
+            fill: var(--beauty-landing-2-c6);
+            top: 376px;
+            left: 295px;
+            transform: rotate(12deg);
+           animation: none;
+    
+            @media screen and (min-width: $bp-desktop) {
+                width: 64px;
+                height: 64px;
+                top: 392px;
+                left: 770px;
+                transform: rotate(12deg);
+                animation: starsBlink 2.5s infinite ease-in-out;
+               
+            }
         }
-    }
-
-    &__star--m {
-        display: none;
-        @media screen and (min-width: $bp-desktop) {
-            top: 58px;
-            right: 144px;
-            transform: rotate(-8deg);
-            fill: var(--beauty-landing-2-s2);
-            display: block;
+    
+        &__star--m {
+            display: none;
+    
+            @media screen and (min-width: $bp-desktop) {
+                top: 58px;
+                right: 144px;
+                fill: var(--beauty-landing-2-s2);
+                display: block;
+                transform: rotate(-8deg);
+                animation-delay: 0.8s;
+            }
         }
-    }
+    
+        &__star--s {
+            display: none;
+    
+            @media screen and (min-width: $bp-desktop) {
+                bottom: -300px;
+                left: 85%;
+                fill: var(--beauty-landing-2-s5);
+                display: block;
+                transform: translateX(-50%) rotate(20deg);
+                animation-delay: 1.5s;
+            }
+        }  
+        
+         }
+        @keyframes starsBlink {
+         0%,100% {
+            opacity: 0.35;
+            filter: drop-shadow(0 0 0 rgba(43, 127, 255, 0));
+             }
 
-    &__star--s {
-        display: none;
-
-        @media screen and (min-width: $bp-desktop) {
-            bottom: -300px;
-            left: 85%;
-            transform: translateX(-50%) rotate(20deg);
-            fill: var(--beauty-landing-2-s5);
-            display: block;
-        }
-    }
-}
+        50% {
+             opacity: 1;
+            filter: drop-shadow(0 0 10px rgba(43, 127, 255, 0.6));
+             }
+            }
 
  
 

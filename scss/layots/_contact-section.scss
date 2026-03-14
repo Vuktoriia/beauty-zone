@@ -40,7 +40,7 @@
         flex-shrink: 0;
         border: none;
         border-radius: 16px;
-        width: 100%;
+        width: 100dvw;
         height: 100%;
 
         @media screen and (min-width: $bp-desktop) {
@@ -93,10 +93,11 @@
     }
 
     &__input {
+        display: block;
+        margin: 0 auto;
         border-radius: 32px;
         width: 241px;
-            height: 46px;
-        // width: 100%;
+        height: 46px;
         padding: 16px;
         border: 1px solid rgba(255, 255, 255, 0.4);
         background: transparent;
@@ -115,7 +116,12 @@
 
     &__btn {
         display: block;
-        margin: 24px auto 16px;
+        margin: 16px auto 8px;
+        padding: 12.5px 24px;
+
+        @media screen and (min-width: $bp-desktop) {
+          padding: 16px 32px;
+        }
     }
 
     &__terms {
