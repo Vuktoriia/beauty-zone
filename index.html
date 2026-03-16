@@ -27,7 +27,6 @@
           <nav class="header__nav">
             <a href="index.html"></a>
             <ul class="header__menu">
-              <li></li>
               <li>
                 <a class="link" href="#hero-section">Про нас</a>
               </li>
@@ -68,7 +67,92 @@
             </svg>
           </button>
           <div class="mobile-menu">
-            <button class="menu-btn-close" type="button">Close</button>
+            <button class="mobile-menu__close menu-btn-close" type="button">
+              <svg
+                width="32"
+                height="32"
+                viewBox="0 0 32 32"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M8 8L24 24"
+                  stroke="#181818"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                />
+                <path
+                  d="M24 8L8 24"
+                  stroke="#181818"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                />
+              </svg>
+            </button>
+            <nav class="mobile-menu__nav">
+              <a class="mobile-menu__logo" href="logo"
+                >Beauty <br />
+                Zone</a
+              >
+
+              <div class="mobile-menu__decor">
+                <svg class="mobile-menu__star mobile-menu__star--l">
+                  <use href="./images/icons.svg#icon-Star-1"></use>
+                </svg>
+                <svg
+                  class="mobile-menu__star mobile-menu__star--m"
+                  width="40"
+                  height="40"
+                >
+                  <use href="./images/icons.svg#icon-Star-2"></use>
+                </svg>
+                <svg
+                  class="mobile-menu__star mobile-menu__star--s"
+                  width="16"
+                  height="16"
+                >
+                  <use href="./images/icons.svg#icon-Star-3"></use>
+                </svg>
+              </div>
+              <ul class="mobile-menu__list">
+                <li class="mobile-menu__item">
+                  <a class="mobile-menu__link" href="#hero-section">Про нас</a>
+                </li>
+                <li class="mobile-menu__item">
+                  <a class="mobile-menu__link" href="#advantages-section"
+                    >Чому ми</a
+                  >
+                </li>
+                <li class="mobile-menu__item">
+                  <a class="mobile-menu__link" href="#procedure-section"
+                    >Наші процедури</a
+                  >
+                </li>
+                <li class="mobile-menu__item">
+                  <a class="mobile-menu__link" href="#contact-section"
+                    >Контакти</a
+                  >
+                </li>
+              </ul>
+
+              <div class="mobile-menu__socials">
+                <a href="#" class="mobile-menu__social-link">
+                  <svg class="mobile-menu__social-icon" width="32" height="32">
+                    <use href="./images/icons.svg#icon-col"></use>
+                  </svg>
+                </a>
+                <a href="#" class="mobile-menu__social-link">
+                  <svg class="mobile-menu__social-icon" width="32" height="32">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+                <a href="#" class="mobile-menu__social-link">
+                  <svg class="mobile-menu__social-icon" width="32" height="32">
+                    <use href="./images/icons.svg#icon-inst"></use>
+                  </svg>
+                </a>
+              </div>
+            </nav>
           </div>
         </div>
       </div>
@@ -346,13 +430,14 @@
                     type="text"
                     name="user-name"
                     id="contact-name"
-                    placeholder="Ім‘я"
-                    minlength="2"
-                    maxlength="20"
+                    placeholder="Ім’я та прізвище"
                     required
+                    minlength="3"
+                    maxlength="40"
+                    pattern="^[A-Za-zА-Яа-яІіЇїЄєҐґ'-]+\s[A-Za-zА-Яа-яІіЇїЄєҐґ'-]+$"
+                    title="Введіть ім’я та прізвище через пробіл"
                   />
                 </div>
-
                 <div class="contact__field">
                   <label class="visually-hidden" for="contact-tel"
                     >Телефон</label
@@ -362,8 +447,10 @@
                     type="tel"
                     name="user-tel"
                     id="contact-tel"
-                    placeholder="Ваш номер телефону"
+                    placeholder="+380XXXXXXXXX"
                     required
+                    pattern="^\+380\d{9}$"
+                    title="Введіть номер у форматі +380XXXXXXXXX"
                   />
                 </div>
 
@@ -499,7 +586,29 @@
     </footer>
     <div class="backdrop is-hidden" id="modal">
       <div class="modal">
-        <button class="modal-btn-close" type="button">Close</button>
+        <button class="modal__btn-close modal-btn-close" type="button">
+          <svg
+            width="32"
+            height="32"
+            viewBox="0 0 32 32"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M8 8L24 24"
+              stroke="#181818"
+              stroke-width="2"
+              stroke-linecap="round"
+              style="stroke: white"
+            />
+            <path
+              d="M24 8L8 24"
+              stroke="#181818"
+              stroke-width="2"
+              stroke-linecap="round"
+              style="stroke: white"
+            />
+          </svg>
+        </button>
         <h2 class="modal-title">Замовити дзвінок</h2>
         <p class="modal-text">
           Запишіться <span>безкоштовно</span> та отримайте подарунок

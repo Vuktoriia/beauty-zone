@@ -12,11 +12,14 @@
     background-color: rgba(0, 0, 0, 0.5);
     z-index: 99;
     overflow: auto;
+ 
+
+  
 }
 
 .modal {
     position: relative;
-    padding: 144px;
+    padding: 44px;
     width: 100%;
     max-width: 880px;
     height: 100%;
@@ -24,18 +27,29 @@
     border-radius: 48px;
     overflow: auto;
     background: var(--beauty-landing-2-c1);
+    background-image: url(../images/background-vector.png);
+
+    @media screen and (min-width: $bp-desktop) {
+        padding: 144px;
+        background-image: url(../images/background-vector.png);
+    }
 }
 
 .modal-title {
     font-weight: 700;
-    font-size: 64px;
-    width: 435px;
+    font-size: 50px;
+    width: 100%;
     line-height: 1.2;
     display: block;
     text-align: center;
     margin: 0 auto;
     margin-bottom: 40px;
     color: var(--beauty-landing-2-background);
+
+    @media screen and (min-width: $bp-desktop) {
+        font-size: 64px;
+        width: 435px;
+    }
 }
 
 .modal-text {
@@ -70,7 +84,14 @@
     position: absolute;
     top: 40px;
     right: 40px;
+   background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
 }
+
+
+   
 
 .form-fieled {
     margin-bottom: 24px;

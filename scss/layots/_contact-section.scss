@@ -1,4 +1,6 @@
 .contact {
+    
+
     &__title {
         text-align: center;
         font-family: var(--third-family);
@@ -52,6 +54,7 @@
     }
 
     &__form-card {
+        background-image: url(../images/background-vector.png);
         position: relative;
         padding: 42px 24px;
         background-color: var(--beauty-landing-2-c1);
