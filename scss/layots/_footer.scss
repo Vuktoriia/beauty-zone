@@ -42,7 +42,6 @@
     &__inner {
         display: grid;
         justify-items: center;
-        row-gap: 16px;
         grid-template-areas:
             "brand"
             "nav"
@@ -51,11 +50,16 @@
             "copyright";
 
         @media screen and (min-width: $bp-desktop) {
+            text-align: left;
             display: flex;
             flex-direction: row;
             align-items: flex-start;
             gap: 186px;
+            justify-content: space-between;
         }
+    }
+    &__nav-item:last-child {
+        margin-bottom: 16px;
     }
 
     &__brand {
@@ -82,6 +86,7 @@
 
     &__policy {
         grid-area: policy;
+        padding-bottom: 16px;
     }
 
     &__nav-list {
@@ -131,7 +136,7 @@
         font-size: 14px;
         color: var(--beauty-landing-2-background);
         text-decoration: none;
-        margin-bottom: 16px;text-decoration: none;
+        text-decoration: none;
         display: inline-flex;
         line-height: 1;
 

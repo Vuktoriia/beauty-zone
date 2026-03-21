@@ -12,9 +12,12 @@
     background-color: rgba(0, 0, 0, 0.5);
     z-index: 99;
     overflow: auto;
- 
-
-  
+}
+.backdrop.is-hidden {
+    /* display: none; */
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
 }
 
 .modal {
@@ -23,6 +26,7 @@
     width: 100%;
     max-width: 880px;
     height: 100%;
+    margin: 8px;
     max-height: 880px;
     border-radius: 48px;
     overflow: auto;
@@ -33,9 +37,26 @@
         padding: 144px;
         background-image: url(../images/background-vector.png);
     }
+
+    &__header {
+        display: flex;
+        justify-content: center;
+    }
+
+
+
+&__btn-close {
+    position: absolute;
+    top: 26px;
+    right: 26px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
 }
 
-.modal-title {
+
+&__title {
     font-weight: 700;
     font-size: 50px;
     width: 100%;
@@ -45,6 +66,7 @@
     margin: 0 auto;
     margin-bottom: 40px;
     color: var(--beauty-landing-2-background);
+    padding: 0 20px;
 
     @media screen and (min-width: $bp-desktop) {
         font-size: 64px;
@@ -52,7 +74,7 @@
     }
 }
 
-.modal-text {
+&__text {
     font-weight: 600;
     font-size: 22px;
     width: 274px;
@@ -64,44 +86,29 @@
     color: var(--beauty-landing-2-background);
 }
 
-.modal-text span {
+&__text span {
     color: #2b7fff;
 }
 
-.backdrop.is-hidden {
-    /* display: none; */
-    opacity: 0;
-    visibility: hidden;
-    pointer-events: none;
-}
 
-.form-label {
+
+&__form-label {
     display: block;
 }
 
-
-.modal-btn-close {
-    position: absolute;
-    top: 40px;
-    right: 40px;
-   background: transparent;
-    border: none;
-    cursor: pointer;
-    padding: 0;
-}
 
 
    
 
-.form-fieled {
+&__form-fieled {
     margin-bottom: 24px;
 }
 
-.form-label {
+&__form-label {
     display: block;
 }
 
-.form-input {
+&__form-input {
     padding: 16px 42px;
     width: 100%;
     font-size: 13px;
@@ -112,16 +119,16 @@
     color: var(--beauty-landing-2-background);
 }
 
-.form-button {
+&__form-button {
     display: block;
     margin: 0 auto 8px;
 }
 
-.form-button:hover {
+&__form-button:hover {
     color: var(--beauty-landing-2-background);
 }
 
-.form-link {
+&__form-link {
     font-weight: 400;
     font-size: 12px;
     width: 213px;
@@ -133,7 +140,8 @@
     text-decoration-skip-ink: none;
 }
 
-.form-terml-link {
+&__form-terml-link {
     color: var(--beauty-landing-2-s5);
     text-decoration-skip-ink: none;
+}
 }

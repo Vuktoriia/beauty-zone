@@ -20,7 +20,7 @@
         transform: translateX(0);
     }
 
-    .menu-btn-close {
+    &__menu-btn-close {
         position: absolute;
         top: 16px;
         right: 24px;
@@ -56,31 +56,29 @@
         font-size: 14px;
         color: var(--beauty-landing-2-s2);
 }
-            &__social-icon {
-                display: flex;
-                text-decoration: none;
+ &__social-icon {
+    display: flex;
+    text-decoration: none;
             }
     
     
-            &__socials {
-                display: flex;
-                gap: 16px;
-                padding-left: 20px;
+ &__socials {
+    display: flex;
+    gap: 16px;
+    padding-left: 20px;
                
-            }
+}
     
-            &__sotial-link {
-                display: flex;
-                text-decoration: none;
-            }  
-
-
+ &__sotial-link {
+     display: flex;
+     text-decoration: none;
+}  
 
 
    &__decor {
       position: relative;
       width: 100%;
-            
+    
   }
             
   &__star {
@@ -91,41 +89,33 @@
     }
             
  &__star--l {
-     width: 40px;
-     height: 40px;
-     fill: var(--beauty-landing-2-c6);
-    bottom: -162px;
-     left: 301px;
-     transform: rotate(12deg);
-    animation: starsBlink 2.5s infinite ease-in-out;
+    width: 40px;
+    height: 40px;
+    fill: var(--beauty-landing-2-c6);
+    top: 180px;
+    right: 20px;
+    transform: rotate(12deg);
             
  @media screen and (min-width: $bp-desktop) {
-    width: 64px;
-    height: 64px;
-    top: 392px;
-    left: 770px;
-    transform: rotate(12deg);
-    animation: none;
-                    }
+    display: none;
+   }
 }
             
  &__star--m {
-    top: 58px;
-    right: 231px;
-    fill: var(--beauty-landing-2-s2);
-    display: block;
-    transform: rotate(-8deg);
-    animation-delay: 0.8s;
+        fill: var(--beauty-landing-2-s2);
+        top: 90px;
+        right: 80px;
+        transform: rotate(-8deg);
+        animation-delay: 0.8s;
 
  @media screen and (min-width: $bp-desktop) {
     display: none;
                 }
 }
  &__star--s {
-     bottom: 33px;
-    left: 53%;
     fill: var(--beauty-landing-2-s5);
-    display: block;
+    top: 240px;
+    left: 70%;
     transform: translateX(-50%) rotate(20deg);
     animation-delay: 1.5s;
             

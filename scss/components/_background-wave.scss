@@ -15,8 +15,15 @@
     background-image: url(../images/background2.png);
     background-repeat: no-repeat;
     background-position: top center;
-    background-size:100% 118%;
+    background-size:cover;
     padding-top: 132px;
+    @media screen and (min-width: $bp-tablet){
+        background-size: cover;  
+    }
+
+    @media screen and (min-width: $bp-desktop){
+        background-size: 100% 118%;
+    }
  
    
 }
