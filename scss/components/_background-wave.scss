@@ -17,12 +17,15 @@
     background-position: top center;
     background-size:cover;
     padding-top: 132px;
+
     @media screen and (min-width: $bp-tablet){
-        background-size: cover;  
+        background-size: cover;
+        // padding-top: 100px; 
     }
 
     @media screen and (min-width: $bp-desktop){
         background-size: 100% 118%;
+        padding-top: 200px;
     }
  
    

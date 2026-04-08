@@ -3,7 +3,7 @@
 
     &__title {
         text-align: center;
-        font-family: var(--third-family);
+        font-family: "Play", sans-serif;
         font-weight: 500;
         font-size: 32px;
         margin: 24px 0;
@@ -79,7 +79,6 @@
     }
 
     &__lead {
-        font-family: var(--font-family);
         font-weight: 600;
         font-size: 22px;
         text-align: center;
