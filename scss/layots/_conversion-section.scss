@@ -1,6 +1,7 @@
 /* Conversion-section */
 
 .conversion-section {
+
  &__container {
  display: flex;
  gap: 32px;
@@ -46,40 +47,43 @@
         line-height: 1.16;
     }
 }
-    &__images-face {
-       display: none;
+&__images-face {
+    position: relative;
+  
 
-        @media screen and (min-width: $bp-desktop) {
-            width: 50%;
-            position: relative;
-            height: 700px;
-            margin: 0 auto;
-            display: block;
-        }
+    @media screen and (min-width: $bp-desktop) {
+        position: relative;
+        display: block;
+        width: 50%;
+        height: 700px;
+        margin: 0 auto;
+    }
+}
 
-
+&__photo {
+    position: absolute;
+    width: 327px;
+    height: 327px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: none;
+    @media screen and (min-width: $bp-desktop){
+        display: block;
     }
 
-    &__images-face__photos-before,
-    &__images-face__photos-after {
-        position: absolute;
-        border-radius: 50%;
-        width: 327px;
-        height: 327px;
-        object-fit: cover;
-    }
-
-    &__images-face__photos-before {
-        margin-top: 30px;
-        left: -20px;
+    &--before {
         top: 0;
+        left: -20px;
+        margin-top: 30px;
+       
     }
 
-    &__images-face__photos-after {
+    &--after {
         top: 320px;
         left: 237px;
         margin-top: 40px;
-    }
+       
+    } }
     
  &__span {
     font-weight: 700;
@@ -91,13 +95,6 @@
     font-weight: 600;
     text-transform: capitalize;
 }
-
-
-    &__decor {
-        position: relative;
-        width: 100%;
-       
-    }
 
         &__star {
             position: absolute;
@@ -111,8 +108,8 @@
             width: 40px;
             height: 40px;
             fill: var(--beauty-landing-2-c6);
-            top: 376px;
-            left: 295px;
+            top: 179px;
+            left: -20px;
             transform: rotate(12deg);
            animation: none;
     
@@ -120,8 +117,8 @@
                 width: 64px;
                 height: 64px;
                 top: 392px;
-                left: 770px;
-                transform: rotate(12deg);
+                left: 138px;
+                transform: rotate(1deg);
                 animation: starsBlink 2.5s infinite ease-in-out;
                
             }
@@ -131,8 +128,8 @@
             display: none;
     
             @media screen and (min-width: $bp-desktop) {
-                top: 58px;
-                right: 144px;
+                top: 46px;
+                right: 29px;
                 fill: var(--beauty-landing-2-s2);
                 display: block;
                 transform: rotate(-8deg);
@@ -144,8 +141,8 @@
             display: none;
     
             @media screen and (min-width: $bp-desktop) {
-                bottom: -300px;
-                left: 85%;
+                bottom: 367px;
+                left: 87%;
                 fill: var(--beauty-landing-2-s5);
                 display: block;
                 transform: translateX(-50%) rotate(20deg);
